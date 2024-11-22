@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --white:white;
+  --aquamarine: rgb(9, 194, 132);
+  --blue: rgb(56, 108, 131);
+  --lightgray:rgb(226, 228, 231);
+  --gray2:#858484;
+
+}
+body{
+  background-color: var(--white);
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  
+}
+.container{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: var(--blue);
+  padding: 20px;
+}
+.sub-container{
+  padding: 1px;
+  border-radius: 10px; 
+  overflow: hidden;
+}
+header{
+  background-color: var(--lightgray);
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color: #858484;
+  
+}
+main{
+  background-color: rgb(242, 244, 247);
+  padding: 20px;
+  
+}
+footer{
+  background-color: var(--lightgray);
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+.btn{
+  background-color: var(--aquamarine);
+  width:80px;
+  height: 34px;
+  border-radius: 5px;
+  border: none;
+  color: var(--white);
+  font-weight:bold;
+  cursor: pointer;
+}
+
+.name,.password,.selecting,.salary,.info{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+label{
+  color: var(--aquamarine);
+  font-weight: bold;
+}
+input[type="text"], input[type="password"], input[type="email"],select, textarea{
+  width:100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+}
+.income-label {
+  color: var(--aquamarine);
+
+}
+
+.bio{
+  display: grid;
+  margin-top: 20px;
+  
+  
+} 
+
+
+
